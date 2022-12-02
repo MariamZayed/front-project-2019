@@ -1,0 +1,223 @@
+/*start main rules*/
+body{
+    
+    height: 4000;
+}
+.container{
+    width: 1170;
+    margin: auto;
+}
+.clear{clear: both;}
+/*end main rules*/
+/*start header*/
+.header .slider{ 
+    background-color: EEE;
+    height: 600;
+    background-image: url('../image/modern-expense-management-1170x600@2x.jpg'); /* this move ,I mean putting the image in the slider itself not in the into which is inside the container, is a ccs3*/
+    background-size: cover;/*  ده لو الصوره صغيره يخليها تعمل سترتش
+    وكمان بتخلي الصوره ريسبونسيف لو صغرت الموقع وكبرته الصوره هتكبر وتصغر*/
+    height: 600;
+  
+}
+.header .slider .intro {
+    
+    padding-top:200px;
+    text-align: center;
+    
+}
+.header .slider .intro h2 {
+    font-size: 50px;
+    width: 600;/*هخل الكلام نفس عؤرض الكونتينر*/
+    margin:auto;
+    border-bottom: 4px #fff solid;
+    border-top: 4px #fff solid;
+    padding: 5px;
+}
+
+.header .navbar{
+    background-color: #252f13;
+    color: #FFF;
+    overflow: hidden;  
+}
+.header .slider .intro button{
+    background: none;
+    color: #fff;
+    font-size:20px; 
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    border: 3px #fff solid;
+}
+.header .navbar h2 {float:left;text-transform: uppercase;}
+
+.header .navbar h2 span { color:#2ecc71}
+
+.header .navbar ul {
+    list-style: none;
+    padding-left:0; 
+    overflow: hidden;
+    float: right;
+}
+.header .navbar ul li {
+    float:left; padding:10px;
+}
+.header .navbar ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.header .navbar ul li.active a,
+.header .navbar ul li a:hover{
+    color: #2ecc71;
+}
+/*end header*/
+
+/*start feature*/
+.feature {
+    overflow:hidden;
+    padding-bottom:40px;
+    padding-top:30px;
+}
+
+.feature .feat {
+    float:left;
+    width:29%;
+    height:170px;
+}
+.feature .feat  h2 {
+    color: #555;
+    
+}
+
+.feature .feat  p {
+    line-height: 1.7;
+    color:#888;
+    padding: 0 15 0 0;
+}
+
+/*end feature*/
+
+/*start about me*/
+.about-me{background-color:#F2F2F2; overflow: hidden;}
+
+.about-me .image{float: left; width: 40%; height: 500px;}
+
+.about-me .image img {width: 100% /*خليتها بالحجم ده لان الصفحه ديه مفروض لما اسكوول تحت واروح عندها الاقي الصوره واخده فل سكرين كامله*/}
+
+.about-me .info {float: right; width: 60%;}
+
+.about-me .info h2 {margin:25px 0px 20px 40px; color: #555;}
+
+.about-me .info p {line-height: 1.6; color:#555;}
+
+.about-me .info > p {margin:0px 0px 20px 40px; width:80%;}
+
+.about-me .info > p:last-of-type{ margin-top: 20px;}
+
+.about-me .info .hobbies { overflow: hidden;  margin:20px 0px 0px 40px;width:80%;}
+
+.about-me .info .hobbies > div {width: 50%;float:left;min-height:100px;overflow: hidden;}
+
+.about-me .info .hobbies .icon {width: 11%;float: left;margin: 15px 5px 0 0;/*    margin: 2%*/}
+
+.about-me .info .hobbies .icon img {max-width: 100%; /*عشان متلطعش برا ال15 في المية .. يعني خديها كده*/}
+
+.about-me .info .hobbies .text {float: left; /*لازم عشان الكلام يكون على شمال الصوره ميروحش يمين مثلا */ width: 87%;}
+
+.about-me .info .hobbies div > h3 {color: #555;}
+
+.about-me .info .hobbies div > p {padding-left: 15px;margin: 9px 0 0 0 0;}
+
+/*end about me*/
+
+/*start skills*/
+.my-skills{
+    overflow: hidden;
+    padding-bottom:30px;
+    padding-top: 30px;
+}
+.my-skills .skills,
+.my-skills .progress{
+    width: 50%;
+    float:left;    
+}
+/*end skills*/
+
+/*start resume*/
+.resume{
+    background-color: #F2F2F2;
+    padding-bottom:30px;
+    padding-top: 30px;
+    text-align: center;
+}
+/*end resume*/
+
+/*start my education*/
+.my-education{
+    overflow: hidden;
+    padding-bottom:30px;
+    padding-top: 30px;
+}
+.my-education .main,
+.my-education .exp {
+    width: 50%;
+    float:left;    
+}
+/*end my education*/
+
+/*start testimonials*/
+.Testimonials{
+    background-color: #F2F2F2;
+    padding-bottom:30px;
+    padding-top: 30px;
+    text-align: center;
+}
+/*end testimonials*/
+
+
+/*start portfolio*/
+.portfolio{
+    padding-bottom:30px;
+    padding-top: 30px;  
+    text-align: center;
+}
+
+.portfolio .our-work {
+    overflow: hidden; /*عشان الكلام ميطلعتش منه*/
+}
+
+.portfolio .our-work > div {
+    float: left;
+    width:33.333333%;
+   margin-bottom:11;
+}
+.portfolio .our-work > div img {width:360; margin: 10;}
+
+/*end portfolio*/
+
+/*start contact me*/
+.contact {
+    overflow:hidden; 
+    background-color:#252f31;
+    /*عشان الكلام ميطلعتش منه*/
+    }
+.contact h2 {color:#fff;}
+.contact p {color:#6a6e71;}
+.contact .info,
+contact .form {
+    float: left;
+    width:50%;
+}
+/*end contact me*/
+
+
+/*start footer*/
+.footer {
+    overflow:hidden; 
+    background-color:#191e22;
+    color:#6a6e71;
+    padding: 20px 0px;
+    text-align: center;
+    
+}
+
+/*end footer*/
